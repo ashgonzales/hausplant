@@ -10,7 +10,7 @@ Hiro's Journey (inspired by Joseph Campbell's infamous monomyth, or heroic narra
 
 ## API and Data Sample
 
-Specify the API you are using and include a link. 
+Dexcom API: https://sandbox-api.dexcom.com
 
 ```
 {
@@ -53,7 +53,17 @@ Specify the API you are using and include a link.
 
 ## Wireframes
 
-Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
+[Mobile Wireframe](https://res.cloudinary.com/ashgon/image/upload/v1599214524/mobile_hfe0ck.png)
+
+This condensed layouts displays only the walking avatar, but shows focus to each individual data component.
+
+[Tablet Wireframe](https://res.cloudinary.com/ashgon/image/upload/v1599214524/ipad_xez4ci.png)
+
+The tablet wireframe displays the avatar on an infinite run with a multi-layered background. Individual data components are situated beneath the animation, though user must scroll to see them all.
+
+[Desktop Wireframe](https://res.cloudinary.com/ashgon/image/upload/v1599214524/desktop_fatnvk.png)
+
+The desktop layout displays both the animation and all data components.
 
 ### MVP/PostMVP
 
@@ -116,3 +126,9 @@ function reverse(string) {
 
 ## Change Log
  Use this section to document what changes were made and the reasoning behind those changes. 
+
+https://api.dexcom.com/v2/oauth2/login?client_id=M9DwcfZSjDBpw56c9aT1A9kZpnrKYs9p&redirect_uri=https://github.com/ashgonzales/hiros-journey&response_type=code&scope=offline_access
+
+ a3f7d96aba8fcd42e082bd58a3404c99
+
+ https://sandbox-api.dexcom.com/v2/oauth2/token
