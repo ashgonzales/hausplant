@@ -103,7 +103,7 @@ The goal of this MVP is to properly use the Airtable base to display information
 
 ## Priority Matrix
 
-![Priority Matrix](https://res.cloudinary.com/ashgon/image/upload/v1599227432/Priority_Matrix_akhv9d.pdf)
+![Priority Matrix](https://res.cloudinary.com/ashgon/image/upload/v1599229110/Priority_Matrix_zelcvi.pdf)
 
 ## Timeframes
 
