@@ -89,17 +89,17 @@ The goal of this MVP is to properly use the Airtable base to display information
 |  Day | Deliverable | Status
 |---|---| ---|
 |Sept 2 & 3| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
-|September 4| Project Approval | Incomplete
-|September 4| Initial Set-up (Create React app, Install dependencies, Airtable Entries) | Incomplete
-|September 7| Core Application Structure (Imports, Functional Components) | Incomplete
-|September 7| Route Separate Pages | Incomplete
-|September 8| Render, Create | Incomplete
-|September 8| CSS Styling | Incomplete
-|September 9| MVP | Incomplete
-|September 9| Deployment | Incomplete
-|September 10| Post-MVP | Incomplete
-|September 10| Debugging / Presentation Practice | Incomplete
-|September 11| Presentations | Incomplete
+|Sept 4| Project Approval | Incomplete
+|Sept 4| Initial Set-up (Create React app, Install dependencies, Airtable Entries) | Incomplete
+|Sept 7| Core Application Structure (Imports, Functional Components) | Incomplete
+|Sept 7| Route Separate Pages | Incomplete
+|Sept 8| Render, Create | Incomplete
+|Sept 8| CSS Styling | Incomplete
+|Sept 9| MVP | Incomplete
+|Sept 9| Deployment | Incomplete
+|Sept 10| Post-MVP | Incomplete
+|Sept 10| Debugging / Presentation Practice | Incomplete
+|Sept 11| Presentations | Incomplete
 
 ## Priority Matrix
 
