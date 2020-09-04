@@ -53,21 +53,21 @@ Dexcom API: https://sandbox-api.dexcom.com
 
 ## Wireframes
 
+This condensed layouts displays the walking avatar and gives focus to each individual data component.
+
 ![Mobile Wireframe](https://res.cloudinary.com/ashgon/image/upload/v1599214524/mobile_hfe0ck.png)
-
-This condensed layouts displays only the walking avatar, but shows focus to each individual data component.
-
-![Tablet Wireframe](https://res.cloudinary.com/ashgon/image/upload/v1599214524/ipad_xez4ci.png)
 
 The tablet wireframe displays the avatar on an infinite run with a multi-layered background. Individual data components are situated beneath the animation, though user must scroll to see them all.
 
-![Desktop Wireframe](https://res.cloudinary.com/ashgon/image/upload/v1599214524/desktop_fatnvk.png)
+![Tablet Wireframe](https://res.cloudinary.com/ashgon/image/upload/v1599214524/ipad_xez4ci.png)
 
 The desktop layout displays both the animation and all data components.
 
+![Desktop Wireframe](https://res.cloudinary.com/ashgon/image/upload/v1599214524/desktop_fatnvk.png)
+
 ### MVP/PostMVP
 
-THe goal of this MVP is to properly use the Airtable base to display information from the Dexcom API. MVP will utilize functional components with React hooks and axios. 
+The goal of this MVP is to properly use the Airtable base to display information from the Dexcom API. MVP will utilize functional components with React hooks and axios. 
 
 #### MVP 
 
