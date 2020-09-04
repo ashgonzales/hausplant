@@ -103,7 +103,7 @@ The goal of this MVP is to properly use the Airtable base to display information
 
 ## Priority Matrix
 
-![Priority Matrix](https://res.cloudinary.com/ashgon/image/upload/v1599229110/Priority_Matrix_zelcvi.pdf)
+![Task Prioritized](https://app.lucidchart.com/publicSegments/view/6df8d485-4378-40be-99b5-58643bf96337/image.png)
 
 ## Timeframes
 
@@ -113,18 +113,18 @@ The goal of this MVP is to properly use the Airtable base to display information
 | Install Dependencies | H | 1hr | min | min |
 | Enter Data Into Airtable | H | 2hrs | hrs | hrs |
 | Initial React App Structure (Components) | H | 3hrs | hrs | hrs |
-| Route Individual Pages | H | 2hrs| hrs | hrs |
-| Connect API with Axios | H | 1hrs| hrs | hrs |
-| Render (GET) | H | 2hrs| hrs | hrs |
-| Create (POST) | H | 2hrs| hrs | hrs |
-| CSS Styling (App) | H | 2hrs| hrs | hrs |
-| CSS Styling (Other Pages) | H | 3hrs| hrs | hrs |
+| Route Individual Pages | H | 2hrs | hrs | hrs |
+| Connect API with Axios | H | 1hrs | hrs | hrs |
+| Render (GET) | H | 2hrs | hrs | hrs |
+| Create (POST) | H | 2hrs | hrs | hrs |
+| CSS Styling (App) | H | 2hrs | hrs | hrs |
+| CSS Styling (Other Pages) | H | 3hrs | hrs | hrs |
 | Deployment | H | 1hrs | hrs | hrs |
-| POST: MVP - Give Avatar Different Expressions | H | 2hrs| hrs | hrs |
-| POST: MVP - Infinite Running Background | H | 3hrs| hrs | hrs |
-| POST: MVP - Animated Bar/Line Graph | H | 2hrs| hrs | hrs |
-| POST: MVP - Incorporate More Game Obstacles | H | 3hrs| hrs | hrs |
-| Total | H | 33hrs| hrs | hrs |
+| POST: MVP - Give Avatar Different Expressions | H | 2hrs | hrs | hrs |
+| POST: MVP - Infinite Running Background | H | 3hrs | hrs | hrs |
+| POST: MVP - Animated Bar/Line Graph | H | 2hrs | hrs | hrs |
+| POST: MVP - Incorporate More Game Obstacles | H | 3hrs | hrs | hrs |
+| Total | H | 33hrs | hrs | hrs |
 
 ## Code Snippet
 
