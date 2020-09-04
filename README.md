@@ -84,10 +84,17 @@ The goal of this MVP is to properly display information from the Airtable base. 
 
 #### MVP 
 
-- Create data columns for glucose values, health events, and devices.
-- Read diabetes management data updated to Airtable.
-- Create a separate page for each data column.
+- Create data columns for initial planting or purchase date, most recent repotting date, the plant's light preference, watering schedule, a web resource for the plant type, the location within the home or home garden, and what yellowing leaves can mean.
+- Read data updated to Airtable.
+- Create data components:
+    + App
+        - Home
+        - Nav Bar
+        - Add Plant
+        - Plant Details
+          + Input
 - Render data on appropriate pages via axios and React components.
+- POST / Create
 - Style pages with CSS. 
 
 #### PostMVP  
@@ -135,7 +142,7 @@ The goal of this MVP is to properly display information from the Airtable base. 
 | POST: MVP - Give Animations to Photos | H | 2hrs | hrs | hrs |
 | POST: MVP - Calendar | H | 2hrs | hrs | hrs |
 | POST: MVP - LocalStorage | H | 3hrs | hrs | hrs |
-| Total | H | 33hrs | hrs | hrs |
+| Total | H | 30hrs | hrs | hrs |
 
 ## Code Snippet
 
