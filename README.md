@@ -67,20 +67,24 @@ The desktop layout displays both the animation and all data components.
 
 ### MVP/PostMVP
 
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
+THe goal of this MVP is to properly use the Airtable base to display information from the Dexcom API. MVP will utilize functional components with React hooks and axios. 
 
 #### MVP 
 *These are examples only. Replace with your own MVP features.*
 
-- Find and use external api 
-- Render data on page 
-- Allow user to choose favorites 
+- Create data columns for glucose values, health events, and devices.
+- Read diabetes management data updated to Airtable.
+- Create a separate page for each data column.
+- Render data on appropriate pages via axios and React components.
+- Style pages with CSS. 
 
 #### PostMVP  
 *These are examples only. Replace with your own Post-MVP features.*
 
-- Add second API
-- Use local storage to save user favorites
+- Animated avatar with reactions to different blood glucose levels.
+- Multi-layered background for infinite running avatar. 
+- CSS animated bar/line graph.
+- Incorporate more game obstacles (such as monsters that appear when glucose levels are too high)
 
 ## Project Schedule
 
@@ -90,13 +94,18 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|July 10-12| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
-|July 13| Project Approval | Incomplete
-|July 13| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|July 14| Pseudocode / actual code | Incomplete
-|July 15| Initial Clickable Model  | Incomplete
-|July 16| MVP | Incomplete
-|July 17| Presentations | Incomplete
+|Sept 2 & 3| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
+|September 4| Project Approval | Incomplete
+|September 4| Initial Set-up (Create React app, Install dependencies, Airtable Entries) | Incomplete
+|September 5| Core Application Structure (Imports, Functional Components) | Incomplete
+|September 5| Render, Create | Incomplete
+|September 6| CSS Styling | Incomplete
+|September 7| Initial Clickable Model | Incomplete
+|September 8| MVP | Incomplete
+|September 8| Deployment | Incomplete
+|September 9| Post-MVP | Incomplete
+|September 10| Debugging / Presentation Practice | Incomplete
+|September 11| Presentations | Incomplete
 
 ## Priority Matrix
 
