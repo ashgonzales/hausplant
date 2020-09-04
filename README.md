@@ -14,6 +14,56 @@ API: N/A
 
 Airtable Data: (https://airtable.com/shrRtFF4b7nVwI91G)
 
+API Sample:
+```
+{
+    "records": [
+        {
+            "id": "recPtkSGYkwM19ObB",
+            "fields": {
+                "Last Repotted": "2020-08-01",
+                "Planted/Purchased": "2017-08-01",
+                "Watering Schedule": "Weekly - When top 1\" of Soil is Dry",
+                "Light Preference": "Indirect Light - Low to High Brightness",
+                "Resource": "https://www.greenandvibrant.com/money-tree-plant",
+                "Location": "Bedroom",
+                "Plant Type": "Monstera",
+                "Yellowing Leaves": "Too much water."
+            },
+            "createdTime": "2020-05-05T20:45:11.000Z"
+        },
+        {
+            "id": "recnECPwo6Z4CjDQk",
+            "fields": {
+                "Last Repotted": "2020-01-01",
+                "Yellowing Leaves": "Too much water or too much sunlight. Yellow leaves near the base may mean too much water.",
+                "Planted/Purchased": "2018-04-01",
+                "Watering Schedule": "Weekly - When top 1\" of Soil is Dry",
+                "Light Preference": "Indirect Light - Low to High Brightness",
+                "Resource": "https://bloomscape.com/plant-care-guide/pothos/",
+                "Location": "Main Light Garden",
+                "Plant Type": "Hanging Pothos"
+            },
+            "createdTime": "2020-05-05T20:45:11.000Z"
+        },
+        {
+            "id": "recLH1c9SBSnK4niA",
+            "fields": {
+                "Yellowing Leaves": "Could mean too much direct sunlight",
+                "Planted/Purchased": "2019-08-01",
+                "Watering Schedule": "Several Days - Whenever top of soil is dry",
+                "Light Preference": "Bright Light",
+                "Resource": "https://www.houseplantsexpert.com/peace-lily-plant.html",
+                "Location": "Main Light Garden",
+                "Plant Type": "Peace Lily"
+            },
+            "createdTime": "2020-05-05T20:45:11.000Z"
+        }
+    ],
+    "offset": "recLH1c9SBSnK4niA"
+}
+```
+
 ## Wireframes
 
 This condensed layout displays a picture of the plant and gives focus to each individual data component.
