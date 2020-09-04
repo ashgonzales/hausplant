@@ -2,72 +2,35 @@
 
 ## Project Name
 
-Hiro's Journey
+HausPlant
 
 ## Project Description
 
-Hiro's Journey (inspired by Joseph Campbell's infamous monomyth, or heroic narrative) combines the functionality of a diabetes management application with the joys if a game-ified interface. The HJ application gathers and renders real-time estimated blood glucose values, user-submitted events (carbohydrate intake, insulin doses, exercise), and other health statistics from the Dexcom RESTful API. We believe that health management should be more than just a health chart; it is a journey that every hero in their story must take and be accountable for, a journey that, while arduous, can also be rewarding and fun.
+HausPlant organizes an individual's collection of indoor and home garden plants. The information collected by the Airtable includes the initial planting or purchase date, most recent repotting date, the plant's light preference, watering schedule, a web resource for the plant type, the location within the home or home garden, and what yellowing leaves can mean.
 
 ## API and Data Sample
 
-Dexcom API: https://sandbox-api.dexcom.com
+API: N/A
 
-```
-{
-  "unit": "mg/dL",
-  "rateUnit": "mg/dL/min",
-  "egvs": [
-    {
-      "systemTime": "2018-02-06T09:12:35",
-      "displayTime": "2018-02-06T01:12:35",
-      "value": 122,
-      "realtimeValue": 121,
-      "smoothedValue": 122,
-      "status": null,
-      "trend": "flat",
-      "trendRate": -0.5
-    },
-    {
-      "systemTime": "2018-02-06T09:07:35",
-      "displayTime": "2018-02-06T01:07:35",
-      "value": 123,
-      "realtimeValue": 124,
-      "smoothedValue": 123,
-      "status": null,
-      "trend": "flat",
-      "trendRate": -0.5
-    },
-    {
-      "systemTime": "2018-02-06T09:02:35",
-      "displayTime": "2018-02-06T01:02:35",
-      "value": 125,
-      "realtimeValue": 125,
-      "smoothedValue": null,
-      "status": null,
-      "trend": "flat",
-      "trendRate": -0.7
-    }
-  ]
-}
-```
+Airtable Data: (https://airtable.com/shrRtFF4b7nVwI91G)
 
 ## Wireframes
 
-This condensed layouts displays the walking avatar and gives focus to each individual data component.
+This condensed layout displays a picture of the plant and gives focus to each individual data component.
 
-![Mobile Wireframe](https://res.cloudinary.com/ashgon/image/upload/v1599214524/mobile_hfe0ck.png)
+![Mobile Wireframe](https://res.cloudinary.com/ashgon/image/upload/v1599249169/mobile_emcv0l.png)
 
-The tablet wireframe displays the avatar on an infinite run with a multi-layered background. Individual data components are situated beneath the animation, though user must scroll to see them all.
+The tablet wireframe displays a picture of the plant with the plant name, genus, and a button to the plant wiki next to it. Beneath is an accordion of Airtable data.
 
-![Tablet Wireframe](https://res.cloudinary.com/ashgon/image/upload/v1599214524/ipad_xez4ci.png)
+![Tablet Wireframe](https://res.cloudinary.com/ashgon/image/upload/v1599249169/ipad_e0isqn.png)
 
-The desktop layout displays both the animation and all data components.
+The desktop layout wil display a large header with the description of the application, and a summary of the user's plant collection beneath.
 
-![Desktop Wireframe](https://res.cloudinary.com/ashgon/image/upload/v1599214524/desktop_fatnvk.png)
+![Desktop Wireframe](https://res.cloudinary.com/ashgon/image/upload/v1599249169/desktop_hid2mj.png)
 
 ### MVP/PostMVP
 
-The goal of this MVP is to properly use the Airtable base to display information from the Dexcom API. MVP will utilize functional components with React hooks and axios. 
+The goal of this MVP is to properly display information from the Airtable base. MVP will utilize functional components with React hooks and axios. 
 
 #### MVP 
 
