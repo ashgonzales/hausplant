@@ -42,10 +42,9 @@ The goal of this MVP is to properly display information from the Airtable base. 
 
 #### PostMVP  
 
-- Animated avatar with reactions to different blood glucose levels.
-- Multi-layered background for infinite running avatar. 
-- CSS animated bar/line graph.
-- Incorporate more game obstacles (such as monsters that appear when glucose levels are too high)
+- Local Storage.
+- Watering calendar.
+- Photo animations.
 
 ## Project Schedule
 
@@ -81,12 +80,11 @@ The goal of this MVP is to properly display information from the Airtable base. 
 | Render (GET) | H | 2hrs | hrs | hrs |
 | Create (POST) | H | 2hrs | hrs | hrs |
 | CSS Styling (App) | H | 2hrs | hrs | hrs |
-| CSS Styling (Other Pages) | H | 3hrs | hrs | hrs |
+| CSS Styling (Accordion) | H | 3hrs | hrs | hrs |
 | Deployment | H | 1hrs | hrs | hrs |
-| POST: MVP - Give Avatar Different Expressions | H | 2hrs | hrs | hrs |
-| POST: MVP - Infinite Running Background | H | 3hrs | hrs | hrs |
-| POST: MVP - Animated Bar/Line Graph | H | 2hrs | hrs | hrs |
-| POST: MVP - Incorporate More Game Obstacles | H | 3hrs | hrs | hrs |
+| POST: MVP - Give Animations to Photos | H | 2hrs | hrs | hrs |
+| POST: MVP - Calendar | H | 2hrs | hrs | hrs |
+| POST: MVP - LocalStorage | H | 3hrs | hrs | hrs |
 | Total | H | 33hrs | hrs | hrs |
 
 ## Code Snippet
