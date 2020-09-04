@@ -88,22 +88,18 @@ THe goal of this MVP is to properly use the Airtable base to display information
 
 ## Project Schedule
 
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
-
-You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
-
 |  Day | Deliverable | Status
 |---|---| ---|
 |Sept 2 & 3| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
 |September 4| Project Approval | Incomplete
 |September 4| Initial Set-up (Create React app, Install dependencies, Airtable Entries) | Incomplete
-|September 5| Core Application Structure (Imports, Functional Components) | Incomplete
-|September 5| Render, Create | Incomplete
-|September 6| CSS Styling | Incomplete
-|September 7| Initial Clickable Model | Incomplete
-|September 8| MVP | Incomplete
-|September 8| Deployment | Incomplete
-|September 9| Post-MVP | Incomplete
+|September 7| Core Application Structure (Imports, Functional Components) | Incomplete
+|September 7| Route Separate Pages | Incomplete
+|September 8| Render, Create | Incomplete
+|September 8| CSS Styling | Incomplete
+|September 9| MVP | Incomplete
+|September 9| Deployment | Incomplete
+|September 10| Post-MVP | Incomplete
 |September 10| Debugging / Presentation Practice | Incomplete
 |September 11| Presentations | Incomplete
 
@@ -119,8 +115,21 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
+| Proposal Preparation | H | 4hrs | 4hrs | 4hrs |
+| Install Dependencies | H | 30min | min | min |
+| Enter Data Into Airtable | H | 2hrs | hrs | hrs |
+| Initial React App Structure (Components) | H | 3hrs| hrs | hrs |
+| Route Individual Pages | H | 2hrs| hrs | hrs |
+| Connect API with Axios | H | 1hrs| hrs | hrs |
+| Render (GET) | H | 1hrs| hrs | hrs |
+| Create (POST) | H | 2hrs| hrs | hrs |
+| CSS Styling (App) | H | 1hrs| hrs | hrs |
+| CSS Styling (Other Pages) | H | 3hrs| hrs | hrs |
+| Deployment | H | 1hrs | hrs | hrs |
+| POST: MVP - Give Avatar Different Expressions | H | 2hrs| hrs | hrs |
+| POST: MVP - Infinite Running Background | H | 3hrs| hrs | hrs |
+| POST: MVP - Animated Bar/Line Graph | H | 2hrs| hrs | hrs |
+| POST: MVP - Incorporate More Game Obstacles | H | 3hrs| hrs | hrs |
 | Total | H | 6hrs| 5hrs | 5hrs |
 
 ## Code Snippet
@@ -135,9 +144,3 @@ function reverse(string) {
 
 ## Change Log
  Use this section to document what changes were made and the reasoning behind those changes. 
-
-https://api.dexcom.com/v2/oauth2/login?client_id=M9DwcfZSjDBpw56c9aT1A9kZpnrKYs9p&redirect_uri=https://github.com/ashgonzales/hiros-journey&response_type=code&scope=offline_access
-
- a3f7d96aba8fcd42e082bd58a3404c99
-
- https://sandbox-api.dexcom.com/v2/oauth2/token
