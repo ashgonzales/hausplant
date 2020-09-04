@@ -70,7 +70,6 @@ The desktop layout displays both the animation and all data components.
 THe goal of this MVP is to properly use the Airtable base to display information from the Dexcom API. MVP will utilize functional components with React hooks and axios. 
 
 #### MVP 
-*These are examples only. Replace with your own MVP features.*
 
 - Create data columns for glucose values, health events, and devices.
 - Read diabetes management data updated to Airtable.
@@ -79,7 +78,6 @@ THe goal of this MVP is to properly use the Airtable base to display information
 - Style pages with CSS. 
 
 #### PostMVP  
-*These are examples only. Replace with your own Post-MVP features.*
 
 - Animated avatar with reactions to different blood glucose levels.
 - Multi-layered background for infinite running avatar. 
@@ -105,32 +103,28 @@ THe goal of this MVP is to properly use the Airtable base to display information
 
 ## Priority Matrix
 
-Include a full list of features that have been prioritized based on the `Time and Importance` Matrix.  Link this image in a similar manner to your wireframes
+[Priority Matrix](https://res.cloudinary.com/ashgon/image/upload/v1599227432/Priority_Matrix_akhv9d.pdf)
 
 ## Timeframes
-
-Tell us how long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day.
-
-Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Throughout your project, keep track of your Time Invested and Actual Time and update your README regularly.
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Proposal Preparation | H | 4hrs | 4hrs | 4hrs |
-| Install Dependencies | H | 30min | min | min |
+| Install Dependencies | H | 1hr | min | min |
 | Enter Data Into Airtable | H | 2hrs | hrs | hrs |
-| Initial React App Structure (Components) | H | 3hrs| hrs | hrs |
+| Initial React App Structure (Components) | H | 3hrs | hrs | hrs |
 | Route Individual Pages | H | 2hrs| hrs | hrs |
 | Connect API with Axios | H | 1hrs| hrs | hrs |
-| Render (GET) | H | 1hrs| hrs | hrs |
+| Render (GET) | H | 2hrs| hrs | hrs |
 | Create (POST) | H | 2hrs| hrs | hrs |
-| CSS Styling (App) | H | 1hrs| hrs | hrs |
+| CSS Styling (App) | H | 2hrs| hrs | hrs |
 | CSS Styling (Other Pages) | H | 3hrs| hrs | hrs |
 | Deployment | H | 1hrs | hrs | hrs |
 | POST: MVP - Give Avatar Different Expressions | H | 2hrs| hrs | hrs |
 | POST: MVP - Infinite Running Background | H | 3hrs| hrs | hrs |
 | POST: MVP - Animated Bar/Line Graph | H | 2hrs| hrs | hrs |
 | POST: MVP - Incorporate More Game Obstacles | H | 3hrs| hrs | hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| Total | H | 33hrs| hrs | hrs |
 
 ## Code Snippet
 
