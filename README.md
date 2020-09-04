@@ -53,15 +53,15 @@ Dexcom API: https://sandbox-api.dexcom.com
 
 ## Wireframes
 
-[Mobile Wireframe](https://res.cloudinary.com/ashgon/image/upload/v1599214524/mobile_hfe0ck.png)
+![Mobile Wireframe](https://res.cloudinary.com/ashgon/image/upload/v1599214524/mobile_hfe0ck.png)
 
 This condensed layouts displays only the walking avatar, but shows focus to each individual data component.
 
-[Tablet Wireframe](https://res.cloudinary.com/ashgon/image/upload/v1599214524/ipad_xez4ci.png)
+![Tablet Wireframe](https://res.cloudinary.com/ashgon/image/upload/v1599214524/ipad_xez4ci.png)
 
 The tablet wireframe displays the avatar on an infinite run with a multi-layered background. Individual data components are situated beneath the animation, though user must scroll to see them all.
 
-[Desktop Wireframe](https://res.cloudinary.com/ashgon/image/upload/v1599214524/desktop_fatnvk.png)
+![Desktop Wireframe](https://res.cloudinary.com/ashgon/image/upload/v1599214524/desktop_fatnvk.png)
 
 The desktop layout displays both the animation and all data components.
 
@@ -103,7 +103,7 @@ THe goal of this MVP is to properly use the Airtable base to display information
 
 ## Priority Matrix
 
-[Priority Matrix](https://res.cloudinary.com/ashgon/image/upload/v1599227432/Priority_Matrix_akhv9d.pdf)
+![Priority Matrix](https://res.cloudinary.com/ashgon/image/upload/v1599227432/Priority_Matrix_akhv9d.pdf)
 
 ## Timeframes
 
