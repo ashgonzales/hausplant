@@ -86,13 +86,7 @@ The goal of this MVP is to properly display information from the Airtable base. 
 
 - Create data columns for initial planting or purchase date, most recent repotting date, the plant's light preference, watering schedule, a web resource for the plant type, the location within the home or home garden, and what yellowing leaves can mean.
 - Read data updated to Airtable.
-- Create data components:
-    + App
-        - Home
-        - Nav Bar
-        - Add Plant
-        - Plant Details
-          + Input
+- Create data components.
 - Render data on appropriate pages via axios and React components.
 - POST / Create
 - Style pages with CSS. 
@@ -102,6 +96,14 @@ The goal of this MVP is to properly display information from the Airtable base. 
 - Local Storage.
 - Watering calendar.
 - Photo animations.
+
+## Component Hierarchy
+    + App
+        - Home
+        - Nav Bar
+        - Add Plant
+        - Plant Details
+          + Input
 
 ## Project Schedule
 
