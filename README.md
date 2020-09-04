@@ -103,7 +103,7 @@ The goal of this MVP is to properly use the Airtable base to display information
 
 ## Priority Matrix
 
-![Task Prioritized](https://app.lucidchart.com/publicSegments/view/6df8d485-4378-40be-99b5-58643bf96337/image.png)
+![Task Prioritized](https://res.cloudinary.com/ashgon/image/upload/v1599229823/image_abl2mq.png)
 
 ## Timeframes
 
