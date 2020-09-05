@@ -4,6 +4,23 @@ import HomePage from './components/HomePage';
 import './App.css';
 
 function App() {
+  const [plants, setPlants] = useState([]);
+  const [fetchPlants, setFetchPlants] = useState([false]);
+  
+  useEffect(() => {
+    const getPlants = async () => {
+      const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/hausplant?Grid%20View`;
+      const response = await axios.get(airtableURL, {
+        headers: {
+          'Authorization': `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
+          'Content-Type': 'application/json',
+        },
+      });
+      setPlants(response.data.records);
+    }
+    getPlants();
+  }, [fetchPlants]);
+
   return (
     <div className="App">
       <Switch>
@@ -11,10 +28,18 @@ function App() {
             <HomePage />
           </Route>
           <Route path="/plant/:id">
-            <PlantDetails />
+            <PlantDetails
+              plants={plants}
+              key={plants.id}
+              fetchPlants={fetchPlants}
+              setFetchPlants={setFetchPlants}
+            />
           </Route>
           <Route path="/plant/new">
-            <AddPlant />
+          <AddPlant
+            fetchPlants={fetchPlants}
+            setFetchPlants={setFetchPlants}
+          />
           </Route>
         </Switch>
     </div>
