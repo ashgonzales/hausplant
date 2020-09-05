@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import HomePage from './components/HomePage';
+import axios from 'axios';
 import './App.css';
 
-function App() {
+function App(props) {
   const [plants, setPlants] = useState([]);
   const [fetchPlants, setFetchPlants] = useState([false]);
   
