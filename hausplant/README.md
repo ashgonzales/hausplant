@@ -126,8 +126,6 @@ The goal of this MVP is to properly display information from the Airtable base. 
 
 ![Task Prioritized](https://res.cloudinary.com/ashgon/image/upload/v1599229823/image_abl2mq.png)
 
-## Timeframes
-
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Proposal Preparation | H | 4hrs | 4hrs | 4hrs |
@@ -146,15 +144,9 @@ The goal of this MVP is to properly display information from the Airtable base. 
 | POST: MVP - LocalStorage | H | 3hrs | hrs | hrs |
 | Total | H | 30hrs | hrs | hrs |
 
-## Code Snippet
+## SWOT
 
-Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  
-
-```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
-```
-
-## Change Log
- Use this section to document what changes were made and the reasoning behind those changes. 
+Strengths : I feel like a good visionary. I let my eye for design and aesthetic lead my inspiration
+Weaknesses : Planning. I still benefit from a plan but the more detailed a schedule, the more flustered and pressed for time I feel, which is almost stifling for the creative process. (I'm working on it.)
+Opportunities : I decided to keep my plan a little less congested with directions this time around and started with a more high-fidelity wireframe to get the creative juices flowing.
+Threats : Being indecisive and changing my mind half-way throughout the project about a design feature. I am known to do that.
