@@ -11,8 +11,6 @@ const AddPlant = (props) => {
   const [yellowing, setYellowing] = useState('');
   const [infoLink, setInfoLink] = useState('');
 
-  // useEffects cannot run asynchronously
-  // enclose data in data object
   const handleSubmit = async (event) => {
     event.preventDefault();
     const fields = {
@@ -25,6 +23,7 @@ const AddPlant = (props) => {
       yellowing,
       infoLink
     };
+
     const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/hausplant`;
     await axios.post(airtableURL, { fields }, {
       header: {
@@ -34,7 +33,7 @@ const AddPlant = (props) => {
     props.setFetchPlants(!props.fetchPlants);
     setPlant('');
     setDatePlanted('');
-    setDatePotted('');
+    setDateRepotted('');
     setWatering('');
     setLighting('');
     setLocation('');
@@ -44,25 +43,55 @@ const AddPlant = (props) => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <label htmlFor="title">Title:</label>
+      <label htmlFor="plant">Plant Name:</label>
       <input
-        name="title"
+        name="plant"
         type="text"
-        value={title}
-        onChange={(event) => setTitle(event.target.value)} />
-      <label htmlFor="text">Text: </label>
+        value={plant}
+        onChange={(event) => setPlant(event.target.value)} />
+      <label htmlFor="datePlanted">Date Planted:</label>
       <textarea
-        name="text"
+        name="datePlanted"
         type="text"
-        value={text}
-        onChange={(event) => setText(event.target.value)} />
-      <label htmlFor="author">Author:</label>
+        value={datePlanted}
+        onChange={(event) => setDatePlanted(event.target.value)} />
+      <label htmlFor="datePotted">Author:</label>
       <input
-        name="author"
+        name="dateRepotted"
         type="text"
-        value={author}
-        onChange={(event) => setAuthor(event.target.value)} />
-      <button type="submit">`Fry Me Cap'n`</button>
+        value={dateRepotted}
+        onChange={(event) => setDateRepotted(event.target.value)} />
+      <label htmlFor="watering">Watering Schedule:</label>
+      <input
+        name="watering"
+        type="text"
+        value={watering}
+        onChange={(event) => setWatering(event.target.value)} />
+      <label htmlFor="lighting">Light Preference:</label>
+      <input
+        name="lighting"
+        type="text"
+        value={lighting}
+        onChange={(event) => setLighting(event.target.value)} />
+      <label htmlFor="location">Location:</label>
+      <input
+        name="location"
+        type="text"
+        value={location}
+        onChange={(event) => setLocation(event.target.value)} />
+      <label htmlFor="yellowing">Yellowing Leaves:</label>
+      <input
+        name="yellowing"
+        type="text"
+        value={yellowing}
+        onChange={(event) => setYellowing(event.target.value)} />
+      <label htmlFor="infoLink">Info Link:</label>
+      <input
+        name="infoLink"
+        type="text"
+        value={infoLink}
+        onChange={(event) => setInfoLink(event.target.value)} />
+      <button type="submit">`Add Plant`</button>
     </form>
   )
 }
