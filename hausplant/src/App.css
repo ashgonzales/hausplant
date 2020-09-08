@@ -1,19 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
 
-header {
-  background-image: url(https://i.imgur.com/YHTdsfi.jpg?1);
-  background-size: cover;
-  height: 300px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
-h1 {
-  font-family: 'Berkshire Swash', cursive;
-  font-size: 3rem;
-  color: #ffffff;
-}
-
-img {
-  max-width: 250px;
+* {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .my-masonry-grid {

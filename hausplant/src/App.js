@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import HomePage from './components/HomePage';
+import Navbar from './components/Navbar/Navbar';
 import AddPlant from './components/AddPlant';
 import PlantDetails from './components/PlantDetails';
 import { baseURL } from './services/constants';
@@ -28,11 +29,9 @@ function App(props) {
 
   return (
     <div className="App">
-      <header>
-        <h1>Haus Plant</h1>
-      </header>
       <Switch>
         <Route exact path="/" >
+          <Navbar />
         {
           plants.map((plant) => (
             <HomePage
@@ -50,7 +49,7 @@ function App(props) {
             setFetchPlants={setFetchPlants}
           />
         </Route>
-        <Route path="/plant/new">
+        <Route path="/addplant">
           <AddPlant
             fetchPlants={fetchPlants}
             setFetchPlants={setFetchPlants}
