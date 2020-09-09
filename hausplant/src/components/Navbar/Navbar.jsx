@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
 import { NavbarItems } from './NavbarItems';
-import { Button } from '../Button';
 import './Navbar.css';
 
 class Navbar extends Component {
   // Set state so that when you click on menu icon, it says true or false
-  state = { isClicked: false }
+  state = { clicked: false }
 
   // Set click to the opposite value whenever you click it (which toggles between icons)
   handleClick = () => {
-    this.setState({ isClicked: !this.state.isClicked})
+    this.setState({ clicked: !this.state.clicked})
   }
 
   render() {
@@ -18,10 +17,10 @@ class Navbar extends Component {
         <h1 className="navbar-logo">HausPlant <i className="fas fa-seedling"></i></h1>
         <div className="menu-icon" onClick={this.handleClick}>
           {/* If this.state is clicked, changed bars icon to the times icon */}
-          <i className={this.state.isClicked ? 'fas fa-times' : 'fas fa-bars'}></i>
+          <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
         </div>
         {/* If clicked, adds clas of active; if not, stays nav-menu */}
-        <ul className={this.state.isClicked ? 'navbar-menu active' : 'navbar-menu'}>
+        <ul className={this.state.clicked ? 'navbar-menu active' : 'navbar-menu'}>
           {NavbarItems.map((el, idx) => {
             return (
               <li key={idx}>
@@ -34,7 +33,6 @@ class Navbar extends Component {
             )
           })}
         </ul>
-        <Button>Add Plant</Button>
       </nav>
     )
   }

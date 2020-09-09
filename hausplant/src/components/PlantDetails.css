@@ -1,0 +1,33 @@
+input[type=text] {
+  margin: 0 auto;
+  border: none;
+  border-bottom: 2px solid #000000;
+  width: 100%;
+  padding: 12px; 
+  box-sizing: border-box; 
+  margin-top: 6px;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+label {
+  font-size: 1rem;
+  padding: 12px;
+}
+
+button {
+  background-color: #fcca46;
+  padding: 20px;
+  color: black;
+}
+
+.form-container {
+  width: 600px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 3rem;
+  padding: 20px;
+  text-align: center;
+}
