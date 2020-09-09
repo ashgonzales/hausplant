@@ -7,22 +7,22 @@ import './PlantDetails.css';
 function PlantDetails(props) {
   const [fetchPlants, setFetchPlants] = useState([]);
   const params = useParams();
-  const {
-    plants,
-    name,
-    image,
-    commonNames,
-    botanicalName,
-    datePlanted,
-    dateRepotted,
-    potAndSoil,
-    watering,
-    lighting,
-    location,
-    commonProblems,
-    careGuide
-  } = props.plant.field;
-  const plant = plants.find((plant) => params.name === plant.name);
+  // const {
+  //   plants,
+  //   name,
+  //   image,
+  //   commonNames,
+  //   botanicalName,
+  //   datePlanted,
+  //   dateRepotted,
+  //   potAndSoil,
+  //   watering,
+  //   lighting,
+  //   location,
+  //   commonProblems,
+  //   careGuide
+  // } = props.plants.fields;
+  const plant = props.plants.find((plant) => params.id === plant.id);
 
   const handleDelete = async () => {
     const airtableURL = `${baseURL}/${plant.id}`;
@@ -36,20 +36,20 @@ function PlantDetails(props) {
   }
 
   return (
-    <div className="single-plant-container">
-      <img src={image} alt={name} className="single-plant-img"/>
+    <div>
+      <img src={plant.image} alt={plant.name} className="single-plant-img"/>
       <div className="text-div">
-        <h2>{name}</h2>
-        <h4>{commonNames}</h4>
-        <h6>({botanicalName})</h6>
-        <p>{datePlanted}</p>
-        <p>{dateRepotted}</p>
-        <p>{potAndSoil}</p>
-        <p>{watering}</p>
-        <p>{lighting}</p>
-        <p>{location}</p>
-        <p>{commonProblems}</p>
-        <button><a href={careGuide}>Read More</a></button>
+        <h2>{plant.name}</h2>
+        <h4>{plant.commonNames}</h4>
+        <h6>{plant.botanicalName}</h6>
+        <p>{plant.datePlanted}</p>
+        <p>{plant.dateRepotted}</p>
+        <p>{plant.potAndSoil}</p>
+        <p>{plant.watering}</p>
+        <p>{plant.lighting}</p>
+        <p>{plant.location}</p>
+        <p>{plant.commonProblems}</p>
+        <button><a href={plant.careGuide}>Read More</a></button>
         <button onClick={handleDelete}>DELETE</button>
         
       </div>

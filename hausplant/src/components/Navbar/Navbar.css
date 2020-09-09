@@ -37,7 +37,8 @@
 }
 
 .navbar-links:hover {
-  background-color: #879281;
+  color: #333333;
+  background-color: #fde6e0;
   border-radius: 4px;
   transition: all 0.4s ease-out;
 }
@@ -88,6 +89,7 @@
   }
 
   .navbar-links:hover {
+      color: #333333;
       background-color: #ffeb7a;
       border-radius: 0;
   }
@@ -102,6 +104,7 @@
   .menu-icon {
       display: block;
       position: absolute;
+      margin-right: 30px;
       top: 0;
       right: 0;
       transform: translate(-100%, 60%);

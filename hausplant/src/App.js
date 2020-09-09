@@ -12,6 +12,7 @@ import './App.css';
 
 function App(props) {
   // Declare a state variable set to empty array to map thorugh later
+  const [plant, setPlant] = useState('');
   const [plants, setPlants] = useState([]);
   const [fetchPlants, setFetchPlants] = useState([]);
 
@@ -58,6 +59,8 @@ function App(props) {
         <Route path="/plant/:id">
           <Navbar />
           <PlantDetails
+            plants={plants}
+            setPlant={setPlant}
             fetchPlants={fetchPlants}
             setFetchPlants={setFetchPlants}
           />

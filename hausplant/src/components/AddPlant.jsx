@@ -89,7 +89,7 @@ const AddPlant = (props) => {
         value={datePlanted}
         onChange={(event) => setDatePlanted(event.target.value)} />
       <br />
-      <label htmlFor="datePotted">Author:</label>
+      <label htmlFor="datePotted">Date Repotted:</label>
       <input
         name="dateRepotted"
         type="text"
