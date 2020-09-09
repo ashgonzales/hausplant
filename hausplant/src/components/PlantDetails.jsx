@@ -43,6 +43,7 @@ function PlantDetails(props) {
         <h4>{plant.commonNames}</h4>
         <h6>{plant.botanicalName}</h6>
         <p>{plant.datePlanted}</p>
+        console.log(plant.datePlanted);
         <p>{plant.dateRepotted}</p>
         <p>{plant.potAndSoil}</p>
         <p>{plant.watering}</p>
