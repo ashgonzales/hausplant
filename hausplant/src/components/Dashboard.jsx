@@ -3,19 +3,18 @@ import { Link } from 'react-router-dom';
 import './Dashboard.css'
 
 const Dashboard = (props) => {
-  const { plants } = props.plants;
+  const { plants } = props;
   console.log(plants)
 
   return (
     <div className="container">
-      <div>
-        {/* {plants.map((plant, idx) => (
-          <img src={plant.image} alt={plant.name} />
-        ))} */}
-        // <Link to="/plant/:id">
-          
-        // </Link>
-      </div>
+        {plants.map((plant, idx) => (
+          <Link to={`/plant/${plant.id}`}>
+            <div key={idx}>
+              <img src={plant.fields.image} alt={plant.fields.name} />
+            </div>
+          </Link>
+        ))}
     </div>
   )
 }

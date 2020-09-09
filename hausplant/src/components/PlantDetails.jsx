@@ -7,8 +7,11 @@ import './PlantDetails.css';
 function PlantDetails(props) {
   const [fetchPlants, setFetchPlants] = useState([]);
   const params = useParams();
+  console.log(params);
+  const plant = props.plants.find((plant) => params.id === plant.id);
+  console.log(plant && plant.fields);
+
   // const {
-  //   plants,
   //   name,
   //   image,
   //   commonNames,
@@ -21,8 +24,7 @@ function PlantDetails(props) {
   //   location,
   //   commonProblems,
   //   careGuide
-  // } = props.plants.fields;
-  const plant = props.plants.find((plant) => params.id === plant.id);
+  // } = plant.fields;
 
   const handleDelete = async () => {
     const airtableURL = `${baseURL}/${plant.id}`;
@@ -37,13 +39,13 @@ function PlantDetails(props) {
 
   return (
     <div>
-      <img src={plant.image} alt={plant.name} className="single-plant-img"/>
+      <img src={plant&&plant.fields.image} alt={plant&&plant.fields.name} className="single-plant-img"/>
       <div className="text-div">
+      
         <h2>{plant.name}</h2>
         <h4>{plant.commonNames}</h4>
         <h6>{plant.botanicalName}</h6>
         <p>{plant.datePlanted}</p>
-        console.log(plant.datePlanted);
         <p>{plant.dateRepotted}</p>
         <p>{plant.potAndSoil}</p>
         <p>{plant.watering}</p>
