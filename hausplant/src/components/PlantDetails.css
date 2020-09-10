@@ -1,12 +1,12 @@
 body {
 	background-color: #c7c7c7; 
-	margin:0;
+	margin: 0px 0px;
 	padding:0; 
 }
 
 h3{
   font-family: 'AbsoluteNeonScript';
-  font-size: 5rem;
+  font-size: 3rem;
   letter-spacing: 4px;
   line-height: 3.5rem;
   color:#000000;
@@ -24,33 +24,34 @@ img {
   filter: drop-shadow(4px 4px 4px #333333);
 }
 
-.main-wrapper {
-  margin: 20px 20px;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
-}
-
 .image-div {
   width: 400px;
 }
 
-.info-wrapper {
-  margin: 0 auto; 
+.main-wrapper {
+  margin: 20px 20px;
 }
+
+.flex-container {
+  display: flex;
+}
+
+.flex-child {
+  flex: 1;
+}
+
+.flex-child:first-child {
+  margin-right: 20px;
+} 
 
 .note-wrap {
 	width: 235px;
 	min-height: 235px;
 	padding: 35px; 
 	margin: 0 22px 44px 22px;
-	position: relative;
+	/* position: relative; */
 	font-size: 24px;
 	vertical-align: top;
-  display: inline-block;
 	background: #81b29a;
 	line-height: 34px; 
 	text-align: center;

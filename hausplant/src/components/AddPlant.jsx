@@ -33,7 +33,7 @@ const AddPlant = (props) => {
       commonProblems,
       careGuide
     };
-
+    console.log(fields)
     await axios.post(
       baseURL,
       { fields },
@@ -139,7 +139,7 @@ const AddPlant = (props) => {
         value={careGuide}
         onChange={(event) => setCareGuide(event.target.value)} />
       <br />
-      <button type="submit">Add Plant</button>
+      <button onClick={handleSubmit}>Add Plant</button>
     </form>
   )
 }

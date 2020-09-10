@@ -34,7 +34,7 @@ button {
 
 @media screen and (max-width: 375px) {
   .form-container {
-    max-width: 90%;
+    max-width: 80%;
     margin: 0 auto;
   }
 

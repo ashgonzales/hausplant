@@ -42,14 +42,14 @@ function PlantDetails(props) {
 
   return (
     <div key={id} className="main-wrapper">
-      <div classname="grid-container">
-        <div className="grid-child image-div">
+      <div key="intro" classname="flex-container">
+        <div className="flex-child image-div">
           <img
             src={image}
             alt={name}
           />
         </div>
-        <div className="grid-child note-wrap note-yellow">
+        <div className="flex-child note-wrap note-yellow">
             <h3>{name}</h3>
             <h6 style={{fontStyle:'italic'}}>({botanicalName})</h6>
         </div>
@@ -63,7 +63,7 @@ function PlantDetails(props) {
         <p>Light Preference: {lighting}</p>
         <p>Location: {location}</p>
           <div key="common-problems">
-          <p>Common Problems: {Object.keys({commonProblems}).map((problem, idx) => (<ul><li>commonProblem[idx]</li></ul>))}</p>
+          <p>Common Problems: {commonProblems}</p>
           </div>
         <button><a href={careGuide}>Read More</a></button>
         <button onClick={handleDelete}>Remove</button>
