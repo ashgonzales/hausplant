@@ -10,8 +10,8 @@ import axios from "axios";
 import "./App.css";
 
 function App(props) {
-  // Declare a state variable set to empty array to map thorugh later
-  const [plant, setPlant] = useState("");
+  // Declare a state variable set to empty array to map through later
+  const [plant] = useState("");
   const [plants, setPlants] = useState([]);
   const [fetchPlants, setFetchPlants] = useState([]);
 
@@ -28,10 +28,6 @@ function App(props) {
     getPlants();
   }, []);
 
-  // const plantDivs = plants.map(function (plant) {
-  //   return <div key={plant.id}>{plant.name}</div>;
-  // });
-
   return (
     <div className="App">
       <Switch>
@@ -40,15 +36,12 @@ function App(props) {
           <Dashboard
             plants={plants}
             key={plant.id}
-            fetchPlants={fetchPlants}
-            setFetchPlants={setFetchPlants}
           />
         </Route>
         <Route path="/plant/:id">
           <Navbar />
           <PlantDetails
             plants={plants}
-            setPlant={setPlant}
             fetchPlants={fetchPlants}
             setFetchPlants={setFetchPlants}
           />

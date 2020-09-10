@@ -1,46 +1,50 @@
-h2 {
-  font-size: 3rem;
-  padding: 20px;
-  text-align: center;
+body {
+	background-color: #c7c7c7; 
+	margin:0;
+	padding:0; 
 }
 
-.form-container {
-  width: 600px;
-  margin: 0 auto;
+img {
+  max-width: 100%;
+  display: flex;
 }
 
-input[type=text] {
-  margin: 0 auto;
-  border: none;
-  border-bottom: 2px solid #000000;
-  width: 100%;
-  padding: 12px; 
-  box-sizing: border-box; 
-  margin-top: 6px;
-  margin-bottom: 10px;
-  opacity: 0.8;
+.main-wrapper {
+  margin: 20px 20px;
+  display: flex;
 }
 
-label {
-  font-size: 1rem;
-  padding: 12px;
+.image-div {
+  width: 400px;
 }
 
-button {
-  background-color: #fcca46;
-  padding: 20px;
-  color: black;
+.info-wrapper {
+	margin: 60px auto 0 auto; 
 }
 
-@media screen and (max-width: 375px) {
-  .form-container {
-    max-width: 90%;
-    margin: 0 auto;
-  }
+/* Style the note with shadows */
+.note-wrap {
+	width: 235px;
+	min-height: 235px;
+	padding: 35px; 
+	margin: 0 22px 44px 22px;
+	position: relative;
+	font-size: 24px;
+	vertical-align: top;
+  display: inline-block;
+	color:#4b453c;
+	background: #81b29a;
+	line-height: 34px; 
+	text-align: center;
+  box-shadow: 0 7px 8px rgba(0, 0, 0, 0.3);
+}
 
-  h2 {
-    font-size: 2rem;
-    padding: 20px;
-    text-align: center;
-  }
+/* Set the background color and rotate post-it */
+.note-yellow {
+	background: #81b29a;
+	-webkit-transform: rotate(4deg);
+	-moz-transform: rotate(4deg);
+	-o-transform: rotate(4deg);
+	-ms-transform: rotate(4deg);
+	transform: rotate(4deg);
 }

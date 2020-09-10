@@ -7,24 +7,27 @@ import './PlantDetails.css';
 function PlantDetails(props) {
   const [fetchPlants, setFetchPlants] = useState([]);
   const params = useParams();
-  console.log(params);
   const plant = props.plants.find((plant) => params.id === plant.id);
-  console.log(plant && plant.fields);
+  const fields = plant && plant.fields;
 
-  // const {
-  //   name,
-  //   image,
-  //   commonNames,
-  //   botanicalName,
-  //   datePlanted,
-  //   dateRepotted,
-  //   potAndSoil,
-  //   watering,
-  //   lighting,
-  //   location,
-  //   commonProblems,
-  //   careGuide
-  // } = plant.fields;
+  const {
+    id,
+    name,
+    image,
+    commonNames,
+    botanicalName,
+    datePlanted,
+    dateRepotted,
+    potAndSoil,
+    watering,
+    lighting,
+    location,
+    commonProblems,
+    careGuide
+  } = fields || {};
+  console.log(props);
+  console.log(plant);
+  console.log(image);
 
   const handleDelete = async () => {
     const airtableURL = `${baseURL}/${plant.id}`;
@@ -38,22 +41,28 @@ function PlantDetails(props) {
   }
 
   return (
-    <div>
-      <img src={plant&&plant.fields.image} alt={plant&&plant.fields.name} className="single-plant-img"/>
-      <div className="text-div">
-      
-        <h2>{plant.name}</h2>
-        <h4>{plant.commonNames}</h4>
-        <h6>{plant.botanicalName}</h6>
-        <p>{plant.datePlanted}</p>
-        <p>{plant.dateRepotted}</p>
-        <p>{plant.potAndSoil}</p>
-        <p>{plant.watering}</p>
-        <p>{plant.lighting}</p>
-        <p>{plant.location}</p>
-        <p>{plant.commonProblems}</p>
-        <button><a href={plant.careGuide}>Read More</a></button>
-        <button onClick={handleDelete}>DELETE</button>
+    <div key={id} className="main-wrapper">
+      <div className="image-div">
+        <img
+          src={image}
+          alt={name}
+        />
+      </div>
+      <div key="more-info" className="info-wrapper">
+        <div className="note-wrap note-yellow">
+          <h2>{name}</h2>
+          <h6 style={{fontStyle:'italic'}}>({botanicalName})</h6>
+        </div>
+        <h4>Common Names: {commonNames}</h4>
+        <p>Date Planted: {datePlanted}</p>
+        <p>Date Repotted: {dateRepotted}</p>
+        <p>Pot & Soil Type: {potAndSoil}</p>
+        <p>Watering Schedule:{watering}</p>
+        <p>Light Preference:{lighting}</p>
+        <p>Location: {location}</p>
+        <p>Common Problems: {commonProblems}</p>
+        <button><a href={careGuide}>Read More</a></button>
+        <button onClick={handleDelete}>Remove</button>
         
       </div>
     </div>

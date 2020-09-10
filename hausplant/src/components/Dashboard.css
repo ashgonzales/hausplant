@@ -1,4 +1,6 @@
-/* .header{
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+
+header {
   position:relative;
   overflow:hidden;
   display:flex;
@@ -12,7 +14,7 @@
   min-width:300px;
   color:#eee;
 }
-.header:after{
+header:after{
   content:"";
   width:100%;
   height:100%;
@@ -22,7 +24,7 @@
   z-index:-1;
   background: linear-gradient(to bottom, rgba(0,0,0,0.12) 40%,rgba(27,32,48,1) 100%);
 }
-.header:before{
+header:before {
   content:"";
   width:100%;
   height:200%;
@@ -33,14 +35,14 @@
     -webkit-transform: translateZ(0); backface-visibility: hidden;
   scale: (1.0, 1.0);
     transform: translateZ(0);
-  background:#1B2030 url(https://images.unsplash.com/photo-1571993142257-eae0b44cf0f1?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ) 50% 0 no-repeat;
+  background:#1B2030 url(https://i.imgur.com/yxka7eA.jpg) 50% 0 no-repeat;
   background-size:100%;
   background-attachment:fixed;
   animation: grow 360s  linear 10ms infinite;
   transition:all 0.4s ease-in-out;
   z-index:-2;
 }
-.header a{
+header a {
   color:#eee
 }
 .menu{
@@ -103,7 +105,7 @@
   margin-bottom:3px
 }
 .info h4, .meta{
-  font-size:0.7em
+  font-size:0.7em;
 }
 .meta{
   font-style:italic;
@@ -124,18 +126,15 @@
   display:inline-block;
   padding:5px 10px;
   font-weight:600
-} */
-
-img {
-  max-width: 250px;
-  margin: 10px 0;
-  display: flex;
 }
 
-.container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: flex-start;
-  align-content: stretch;
+img {
+  width: 100%;
+}
+
+/* repeat creates multiple similar columns; auto-fill creates as many columns will fit in the available grid width; minmax(250px,1fr) the columns should have minimum width 250px and a flexible maximum width */
+.grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
 }

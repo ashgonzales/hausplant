@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { baseURL } from "../services/constants";
 import axios from 'axios';
+import './AddPlant.css';
 
 const AddPlant = (props) => {
   const [name, setName] = useState('');

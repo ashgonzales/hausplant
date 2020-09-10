@@ -1,22 +1,54 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import './Dashboard.css'
+import Masonry from 'react-masonry-css';
+import './Dashboard.css';
 
-const Dashboard = (props) => {
-  const { plants } = props;
-  console.log(plants)
+export default class Dashboard extends Component {
+  constructor (props) {
+    super(props);
 
-  return (
-    <div className="container">
-        {plants.map((plant, idx) => (
-          <Link to={`/plant/${plant.id}`}>
-            <div key={idx}>
-              <img src={plant.fields.image} alt={plant.fields.name} />
-            </div>
-          </Link>
-        ))}
-    </div>
-  )
+    this.state = {
+      breakpointColumnsObj: {
+        default: 4,
+        1100: 3,
+        700: 2,
+        500: 1
+      }
+    };
+  }
+
+  render() {
+    const { plants } = this.props;
+    const breakpointColumnsObj = this.state.breakpointColumnsObj;
+
+    const items = plants.map((plant, idx) => {
+      return (
+        <div className="container">
+          <div className="grid">
+            <Link to={`/plant/${plant.id}`} key={idx}>
+              <div key={idx}>
+                <img
+                  src={plant.fields.image}
+                  style={{ width: '100%' }}
+                  alt={plant.fields.name}
+                />
+              </div>
+            </Link>
+          </div>
+        </div>
+      )
+    });
+
+    return (
+      <div>
+        <Masonry
+          breakpointCols={breakpointColumnsObj}
+          className="my-masonry-grid"
+          columnClassName="my-masonry-grid_column"
+        >
+          {items}
+        </Masonry>
+      </div>
+    );
+  }
 }
-
-export default Dashboard;
