@@ -22,15 +22,16 @@ h6 {
 img {
   max-width: 100%;
   filter: drop-shadow(4px 4px 4px #333333);
-  display: flex;
-}
-
-.first-row {
-  display: flex;
 }
 
 .main-wrapper {
   margin: 20px 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
 }
 
 .image-div {

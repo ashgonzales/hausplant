@@ -5,6 +5,7 @@ import Dashboard from "./components/Dashboard";
 import Navbar from "./components/Navbar/Navbar";
 import AddPlant from "./components/AddPlant";
 import PlantDetails from "./components/PlantDetails";
+import Header from './components/Header';
 import { baseURL } from "./services/constants";
 import axios from "axios";
 import "./App.css";
@@ -33,6 +34,7 @@ function App(props) {
       <Switch>
         <Route exact path="/">
           <Navbar />
+          <Header />
           <Dashboard
             plants={plants}
             key={plant.id}
