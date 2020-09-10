@@ -69,70 +69,17 @@ header a {
   right:0;
   box-shadow:0 8px, 0 16px
 }
-.logo{
-  border:2px solid #fff;
-  border-radius:3px;
-  text-decoration:none;
-  display:inline-flex;
-  align-items:center;
-  align-content:center;
-  margin:20px;
-  padding:0px 10px;
-  font-weight:900;
-  font-size:1.1em;
-  line-height:1;
-  box-sizing:border-box;
-  height:40px
-}
-.sides, .info{
-  flex: 0 0 auto;
-  width:50%
-}
-.info{
-  width:100%;
-  padding:15% 10% 0 10%;
-  text-align:center;
-  text-shadow:0 2px 3px rgba(0,0,0,0.2)
-}
-.author{
-  display:inline-block;
-  width:50px;
-  height:50px;
-  border-radius:50%;
-  background:url(https://i.imgur.com/6DLCsZcb.jpg) center no-repeat;
-  background-size:cover;
-  box-shadow:0 2px 3px rgba(0,0,0,0.3);
-  margin-bottom:3px
-}
-.info h4, .meta{
-  font-size:0.7em;
-}
-.meta{
-  font-style:italic;
-}
+
 @keyframes grow{
   0% { transform: scale(1) translateY(0px)}
   50% { transform: scale(1.2) translateY(-400px)}
 }
-.content{  
-  padding:5% 10%;
-  text-align:justify
-}
-.btn{
-  color:#333;
-  border:2px solid;
-  border-radius:3px;
-  text-decoration:none;
-  display:inline-block;
-  padding:5px 10px;
-  font-weight:600
-}
 
 img {
   width: 100%;
+  /* filter: drop-shadow(4px 4px 10px #333333); */
 }
 
-/* repeat creates multiple similar columns; auto-fill creates as many columns will fit in the available grid width; minmax(250px,1fr) the columns should have minimum width 250px and a flexible maximum width */
 .grid {
   display: grid;
   grid-gap: 10px;

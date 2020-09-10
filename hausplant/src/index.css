@@ -11,3 +11,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'NeonAbsoluteSans';
+  src: local('NeonAbsoluteSans'), url(./fonts/NeonAbsoluteSans.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'AbsoluteNeonScript';
+  src: local('AbsoluteNeonScript'), url(./fonts/AbsoluteNeonScript.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Banaue-Regular';
+  src: local('Banaue-Regular'), url(./fonts/Banaue-Regular.otf) format('truetype');
+}

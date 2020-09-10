@@ -4,8 +4,24 @@ body {
 	padding:0; 
 }
 
+h3{
+  font-family: 'AbsoluteNeonScript';
+  font-size: 5rem;
+  letter-spacing: 4px;
+  line-height: 3.5rem;
+  color:#000000;
+  margin-top: 0;
+}
+
+h6 {
+  font-family: 'AbsoluteNeonScript';
+  font-size: 3rem;
+  letter-spacing: 4px;
+}
+
 img {
   max-width: 100%;
+  filter: drop-shadow(4px 4px 4px #333333);
   display: flex;
 }
 
@@ -22,7 +38,6 @@ img {
 	margin: 60px auto 0 auto; 
 }
 
-/* Style the note with shadows */
 .note-wrap {
 	width: 235px;
 	min-height: 235px;
@@ -32,7 +47,6 @@ img {
 	font-size: 24px;
 	vertical-align: top;
   display: inline-block;
-	color:#4b453c;
 	background: #81b29a;
 	line-height: 34px; 
 	text-align: center;

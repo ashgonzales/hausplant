@@ -48,11 +48,11 @@ function PlantDetails(props) {
           alt={name}
         />
       </div>
-      <div key="more-info" className="info-wrapper">
-        <div className="note-wrap note-yellow">
-          <h2>{name}</h2>
+      <div className="note-wrap note-yellow">
+          <h3>{name}</h3>
           <h6 style={{fontStyle:'italic'}}>({botanicalName})</h6>
-        </div>
+      </div>
+      <div key="more-info" className="info-wrapper">
         <h4>Common Names: {commonNames}</h4>
         <p>Date Planted: {datePlanted}</p>
         <p>Date Repotted: {dateRepotted}</p>

@@ -8,6 +8,7 @@
 }
 
 .navbar-logo {
+  font-family: 'NeonAbsoluteSans';
   color: #ffffff;
   justify-self: start;
   margin-left: 20px;
@@ -95,6 +96,7 @@
   }
 
   .navbar-logo {
+      font-family: 'NeonAbsoluteSans';
       position: absolute;
       top: 0;
       left: 0;
