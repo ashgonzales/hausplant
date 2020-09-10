@@ -9,16 +9,16 @@ export const NavbarItems = [
     url: '/update',
     class: 'navbar-links'
   },
-  {
-    title: "Graveyard",
-    url: '/graveyard',
-    class: 'navbar-links'
-  },
-  {
-    title: "Calendar",
-    url: '/calendar',
-    class: 'navbar-links'
-  },
+  // {
+  //   title: "Graveyard",
+  //   url: '/graveyard',
+  //   class: 'navbar-links'
+  // },
+  // {
+  //   title: "Calendar",
+  //   url: '/calendar',
+  //   class: 'navbar-links'
+  // },
   {
     title: "Add Plant",
     url: '/addplant',

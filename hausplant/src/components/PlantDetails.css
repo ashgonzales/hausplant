@@ -25,9 +25,12 @@ img {
   display: flex;
 }
 
+.first-row {
+  display: flex;
+}
+
 .main-wrapper {
   margin: 20px 20px;
-  display: flex;
 }
 
 .image-div {
@@ -35,7 +38,7 @@ img {
 }
 
 .info-wrapper {
-	margin: 60px auto 0 auto; 
+  margin: 0 auto; 
 }
 
 .note-wrap {
