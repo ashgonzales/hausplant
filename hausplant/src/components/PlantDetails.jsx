@@ -63,7 +63,7 @@ function PlantDetails(props) {
         <p>Light Preference: {lighting}</p>
         <p>Location: {location}</p>
           <div key="common-problems">
-          <p>Common Problems: {Object.keys({commonProblems}).map((problem, idx) => (<ul><li>problem</li></ul>))}</p>
+          <p>Common Problems: {Object.keys({commonProblems}).map((problem, idx) => (<ul><li>commonProblem[idx]</li></ul>))}</p>
           </div>
         <button><a href={careGuide}>Read More</a></button>
         <button onClick={handleDelete}>Remove</button>
