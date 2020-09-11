@@ -41,33 +41,47 @@ function PlantDetails(props) {
   }
 
   return (
-    <div key={id} className="main-wrapper">
-      <div key="intro" classname="flex-container">
-        <div className="flex-child image-div">
+    <div key={id} className="main-container">
+      <div key="intro" className="image-container">
+        <div className="image-div">
           <img
             src={image}
             alt={name}
           />
         </div>
-        <div className="flex-child note-wrap note-yellow">
+        <div className="note-wrap note-green">
             <h3>{name}</h3>
             <h6 style={{fontStyle:'italic'}}>({botanicalName})</h6>
         </div>
       </div>
-      <div key="more-info" className="info-wrapper">
-        <h4>Common Names: {commonNames}</h4>
-        <p>Date Planted: {datePlanted}</p>
-        <p>Date Repotted: {dateRepotted}</p>
-        <p>Pot & Soil Type: {potAndSoil}</p>
-        <p>Watering Schedule: {watering}</p>
-        <p>Light Preference: {lighting}</p>
-        <p>Location: {location}</p>
-          <div key="common-problems">
-          <p>Common Problems: {commonProblems}</p>
-          </div>
+      <div key="more-info" className="info-container">
+        <div className="common-names">
+          <p><span>Common Names:</span><br /> {commonNames}</p>
+        </div>
+
+        <div className="date-planted">
+          <p><span>Date Planted:</span><br /> {datePlanted}</p>
+        </div>
+        <div className="date-repotted">
+          <p><span>Date Repotted:</span><br /> {dateRepotted}</p>
+        </div>
+        <div className="pot-and-soil">
+          <p><span>Pot and Soil Type:</span><br /> {potAndSoil}</p>
+        </div>
+        <div className="watering">
+          <p><span>Watering Schedule:</span><br /> {watering}</p>
+        </div>
+        <div className="lighting">
+          <p><span>Light Preference:</span><br /> {lighting}</p>
+        </div>
+        <div className="location">
+          <p><span>Location:</span><br /> {location}</p>
+        </div>
+        <div key="common-problems">
+          <p><span>Common Problems:</span><br /> {commonProblems}</p>
+        </div>
         <button><a href={careGuide}>Read More</a></button>
         <button onClick={handleDelete}>Remove</button>
-        
       </div>
     </div>
   )

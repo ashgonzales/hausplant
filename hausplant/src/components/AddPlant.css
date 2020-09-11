@@ -9,7 +9,7 @@ h2 {
   margin: 0 auto;
 }
 
-input[type=text] {
+input[type=text], [type=date] {
   margin: 0 auto;
   border: none;
   border-bottom: 2px solid #000000;
@@ -26,10 +26,13 @@ label {
   padding: 12px;
 }
 
-button {
-  background-color: #fcca46;
-  padding: 20px;
-  color: black;
+.add-button {
+  background-color: #d28a76;
+  padding: 10px;
+  margin: 20px 0;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 900;
 }
 
 @media screen and (max-width: 375px) {

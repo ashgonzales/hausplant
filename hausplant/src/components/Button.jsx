@@ -1,14 +1,14 @@
 import React from 'react';
 import './Button.css';
 
-const STYLES = [
-  'btn--primary',
-  'btn--outline'
+const styles = [
+  'main-button',
+  'outline-button'
 ]
 
-const SIZES = [
-  'btn--medium',
-  'btn--large'
+const sizes = [
+  'medium-button',
+  'large-button'
 ]
 
 export const Button = ({
@@ -18,16 +18,16 @@ export const Button = ({
   buttonStyle,
   buttonSize
 }) => {
-  // Check if this already includes a button style
-  // If not, it reverts to the style (button primary) in the first position
-  const checkButtonStyle = STYLES.includes(buttonStyle) ? buttonStyle :
-    STYLES[0];
+
+
+  const checkButtonStyle = styles.includes(buttonStyle) ? buttonStyle :
+    styles[0];
   
-  const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
+  const checkButtonSize = sizes.includes(buttonSize) ? buttonSize : sizes[0];
 
   return (
     <button
-      className={`btn ${checkButtonStyle} ${checkButtonSize}`}
+      className={`button ${checkButtonStyle} ${checkButtonSize}`}
       onClick={onClick}
       type={type}>
       {children}

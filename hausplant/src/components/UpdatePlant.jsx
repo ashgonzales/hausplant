@@ -6,8 +6,6 @@ const UpdatePlant = (props) => {
   const [text, setText] = useState(props.review.fields.text);
   const [author, setAuthor] = useState(props.review.fields.author);
 
-  // useEffects cannot run asynchronously
-  // enclose data in data object
   const handleSubmit = async (event) => {
     event.preventDefault();
     const fields = {

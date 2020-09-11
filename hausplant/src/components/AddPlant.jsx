@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { baseURL } from "../services/constants";
+import './Button.css';
 import axios from 'axios';
 import './AddPlant.css';
 
@@ -86,14 +87,14 @@ const AddPlant = (props) => {
       <label htmlFor="datePlanted">Date Planted:</label>
       <input
         name="datePlanted"
-        type="text"
+        type="date"
         value={datePlanted}
         onChange={(event) => setDatePlanted(event.target.value)} />
       <br />
       <label htmlFor="datePotted">Date Repotted:</label>
       <input
         name="dateRepotted"
-        type="text"
+        type="date"
         value={dateRepotted}
         onChange={(event) => setDateRepotted(event.target.value)} />
       <br />
@@ -139,7 +140,9 @@ const AddPlant = (props) => {
         value={careGuide}
         onChange={(event) => setCareGuide(event.target.value)} />
       <br />
-      <button onClick={handleSubmit}>Add Plant</button>
+      <button
+        onClick={handleSubmit}
+        className="add-button">Add Plant</button>
     </form>
   )
 }

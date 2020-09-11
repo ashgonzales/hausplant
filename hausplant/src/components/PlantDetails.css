@@ -5,18 +5,24 @@ body {
 }
 
 h3{
-  font-family: 'AbsoluteNeonScript';
-  font-size: 3rem;
-  letter-spacing: 4px;
-  line-height: 3.5rem;
+  font-family: 'Hurricane';
+  font-size: 2rem;
+  letter-spacing: 2px;
+  line-height: 2rem;
   color:#000000;
   margin-top: 0;
 }
 
 h6 {
-  font-family: 'AbsoluteNeonScript';
-  font-size: 3rem;
-  letter-spacing: 4px;
+  font-family: 'Hurricane';
+  font-size: 1.5rem;
+  letter-spacing: 0px;
+  line-height: 1.5rem;
+}
+
+.main-container {
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 img {
@@ -25,45 +31,50 @@ img {
 }
 
 .image-div {
-  width: 400px;
+  width: 350px;
+  padding: 10px 10px;
+  margin: 10px 20px;
+  float: left;
 }
 
 .main-wrapper {
   margin: 20px 20px;
+
 }
 
-.flex-container {
-  display: flex;
+.info-container {
+  z-index: -1;
+  font-size: 20px;
+  padding: 20px 0;
 }
-
-.flex-child {
-  flex: 1;
-}
-
-.flex-child:first-child {
-  margin-right: 20px;
-} 
 
 .note-wrap {
-	width: 235px;
-	min-height: 235px;
-	padding: 35px; 
+  z-index: 1;
+  top: 150px;
+  left: 40px;
+	width: 200px;
+	min-height: 200px;
+	padding: 30px 4px; 
 	margin: 0 22px 44px 22px;
-	/* position: relative; */
+	position: absolute;
 	font-size: 24px;
 	vertical-align: top;
-	background: #81b29a;
+	background: #89a189;
 	line-height: 34px; 
 	text-align: center;
-  box-shadow: 0 7px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 7px 8px rgba(0, 0, 0, 0.4);
 }
 
-/* Set the background color and rotate post-it */
-.note-yellow {
-	background: #81b29a;
-	-webkit-transform: rotate(4deg);
-	-moz-transform: rotate(4deg);
-	-o-transform: rotate(4deg);
-	-ms-transform: rotate(4deg);
-	transform: rotate(4deg);
+.note-green {
+	background: #89a189;
+	-webkit-transform: rotate(-10deg);
+	-moz-transform: rotate(-10deg);
+	-o-transform: rotate(-10deg);
+	-ms-transform: rotate(-10deg);
+	transform: rotate(-10deg);
+}
+
+span {
+  font-variant: small-caps;
+  font-weight: 900;
 }

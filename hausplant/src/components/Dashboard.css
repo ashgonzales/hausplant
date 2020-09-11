@@ -35,7 +35,7 @@ header:before {
   scale: (1.0, 1.0);
   transform: translateZ(0);
   animation: grow 360s  linear 10ms infinite;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.5s ease-in-out;
   z-index: -2;
 }
 
@@ -51,15 +51,16 @@ header:before {
   font-size: 50px;
 }
 
-.header-h3 {
+.header-p {
+  font-family: 'Hurricane';
   font-size: 40px;
   color: #ffffff;
   line-height: 0.50rem;
 }
 
-img {
-  width: 100%;
-  /* filter: drop-shadow(4px 4px 10px #333333); */
+.dashboard-image {
+  max-width: 100%;
+  filter: drop-shadow(4px 4px 4px #333333);
 }
 
 @media screen and (max-width: 875px) {
@@ -75,7 +76,7 @@ img {
     font-size: 50px;
   }
   
-  .header-h3 {
+  .header-p {
     font-size: 40px;
     color: #ffffff;
   }
@@ -87,7 +88,7 @@ img {
     font-size: 50px;
   }
   
-  .header-h3 {
+  .header-p {
     font-size: 40px;
     color: #ffffff;
     line-height: 1.5rem;
@@ -100,7 +101,7 @@ img {
     font-size: 45px;
   }
   
-  .header-h3 {
+  .header-p {
     font-size: 30px;
     color: #ffffff;
     line-height: 1.5rem;

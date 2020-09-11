@@ -7,25 +7,16 @@
   padding: 0;
 }
 
-a:link {
-  text-decoration: none;
-}
-
 /* visited link */
 a:visited {
   text-decoration: none;
   color: #ffffff;
 }
 
-/* mouse over link */
-a:hover {
-  text-decoration: none;
-}
-
 /* selected link */
 a:active {
   text-decoration: none;
-}
+} 
 
 .my-masonry-grid {
   display: -webkit-box; 
