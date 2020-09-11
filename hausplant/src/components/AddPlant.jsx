@@ -70,6 +70,13 @@ const AddPlant = (props) => {
         value={name}
         onChange={(event) => setName(event.target.value)} />
       <br />
+      <label htmlFor="name">Image URL:</label>
+      <input
+        name="image"
+        type="text"
+        value={image}
+        onChange={(event) => setImage(event.target.value)} />
+      <br />
       <label htmlFor="commonNames">Common Names:</label>
       <input
         name="commonNames"

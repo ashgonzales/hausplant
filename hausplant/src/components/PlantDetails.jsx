@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { baseURL } from "../services/constants";
+import { baseURL } from '../services/constants';
+import './Button.css';
 import axios from 'axios';
 import './PlantDetails.css';
 
@@ -25,9 +26,6 @@ function PlantDetails(props) {
     commonProblems,
     careGuide
   } = fields || {};
-  console.log(props);
-  console.log(plant);
-  console.log(image);
 
   const handleDelete = async () => {
     const airtableURL = `${baseURL}/${plant.id}`;
@@ -80,8 +78,8 @@ function PlantDetails(props) {
         <div key="common-problems">
           <p><span>Common Problems:</span><br /> {commonProblems}</p>
         </div>
-        <button><a href={careGuide}>Read More</a></button>
-        <button onClick={handleDelete}>Remove</button>
+        <button className="more-button"><a href={careGuide}>Read More</a></button>
+        <button className="delete-button" onClick={handleDelete}>Remove</button>
       </div>
     </div>
   )
