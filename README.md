@@ -146,15 +146,6 @@ The goal of this MVP is to properly display information from the Airtable base. 
 | POST: MVP - LocalStorage | H | 3hrs | hrs | hrs |
 | Total | H | 30hrs | hrs | hrs |
 
-## Code Snippet
+## Deployed Site
 
-Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  
-
-```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
-```
-
-## Change Log
- Use this section to document what changes were made and the reasoning behind those changes. 
+https://hausplant.netlify.app/
